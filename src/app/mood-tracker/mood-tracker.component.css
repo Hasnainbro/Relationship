@@ -1,0 +1,23 @@
+.mood-grid {
+  margin: 20 0;
+}
+
+.mood-icon {
+  font-size: 40;
+  text-align: center;
+}
+
+.mood-text {
+  font-size: 18;
+  text-align: center;
+  margin: 10 0;
+  color: #4B0082;
+}
+
+.title, .subtitle {
+  font-size: 20;
+  font-weight: bold;
+  text-align: center;
+  margin: 10 0;
+  color: #FF69B4;
+}

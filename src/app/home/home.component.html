@@ -1,0 +1,69 @@
+<ActionBar title="ClosetoU" class="action-bar">
+  <Label text="❤️" class="action-bar-title"></Label>
+</ActionBar>
+
+<ScrollView class="page">
+  <StackLayout class="home-page">
+    <Label text="Partner Updates" class="title"></Label>
+    <GridLayout rows="auto" columns="*, *" class="partner-updates">
+      <StackLayout row="0" col="0" class="card">
+        <Label text="👤" class="avatar"></Label>
+        <Label text="Boy" class="partner-name"></Label>
+        <Label text="Mood: 😊" class="partner-mood"></Label>
+      </StackLayout>
+      <StackLayout row="0" col="1" class="card">
+        <Label text="👤" class="avatar"></Label>
+        <Label text="Girl" class="partner-name"></Label>
+        <Label text="Mood: 😊" class="partner-mood"></Label>
+      </StackLayout>
+    </GridLayout>
+
+    <Label text="Shared Goals" class="title"></Label>
+    <ListView [items]="sharedGoals" class="list">
+      <ng-template let-goal="item">
+        <Label [text]="goal" class="list-item"></Label>
+      </ng-template>
+    </ListView>
+    <Button text="Add Goal" (tap)="addGoal()" class="btn"></Button>
+
+    <Label text="To-Do List" class="title"></Label>
+    <ListView [items]="todoList" class="list">
+      <ng-template let-task="item">
+        <GridLayout columns="auto, *" class="list-item">
+          <Label [text]="task.completed ? '✅' : '⬜'" col="0"></Label>
+          <Label
+            [text]="task.title"
+            [class.completed]="task.completed"
+            (tap)="toggleTask(task)"
+            col="1"
+          ></Label>
+        </GridLayout>
+      </ng-template>
+    </ListView>
+    <Button text="Add Todo" (tap)="addTodo()" class="btn"></Button>
+
+    <Label text="Reunion Countdown" class="title"></Label>
+    <Label
+      [text]="reunionCountdown + ' days until reunion!'"
+      class="countdown-text"
+    ></Label>
+    <Button text="Edit Countdown" (tap)="editCountdown()" class="btn"></Button>
+
+    <GridLayout rows="auto" columns="*, *" class="menu-grid">
+      <Button
+        text="Mood Tracker"
+        [nsRouterLink]="['/mood-tracker']"
+        row="0"
+        col="0"
+        class="menu-item"
+      ></Button>
+      <Button
+        text="Virtual Date"
+        (tap)="onTap('Virtual Date')"
+        row="0"
+        col="1"
+        class="menu-item"
+      ></Button>
+    </GridLayout>
+  </StackLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<ActionBar title="Mood Tracker" class="action-bar">
+  <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+</ActionBar>
+
+<ScrollView class="page">
+  <StackLayout>
+    <Label text="How are you feeling today?" class="title"></Label>
+    <GridLayout rows="auto" columns="*, *, *, *, *" class="mood-grid">
+      <Label text="😊" class="mood-icon" (tap)="setMood('happy')" col="0"></Label>
+      <Label text="😐" class="mood-icon" (tap)="setMood('neutral')" col="1"></Label>
+      <Label text="😢" class="mood-icon" (tap)="setMood('sad')" col="2"></Label>
+      <Label text="😍" class="mood-icon" (tap)="setMood('loved')" col="3"></Label>
+      <Label text="😴" class="mood-icon" (tap)="setMood('tired')" col="4"></Label>
+    </GridLayout>
+    <Label [text]="'Current Mood: ' + currentMood" class="mood-text"></Label>
+    <Button text="Share Mood" (tap)="shareMood()" class="btn"></Button>
+    <Label text="Partner's Mood" class="subtitle"></Label>
+    <Label [text]="partnerMood" class="mood-text"></Label>
+  </StackLayout>
+</ScrollView>

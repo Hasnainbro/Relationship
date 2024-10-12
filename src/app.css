@@ -1,0 +1,81 @@
+/* Custom styles */
+.action-bar {
+  background-color: #FFB6C1;
+  color: #4B0082;
+}
+
+.action-bar-title {
+  font-size: 24;
+  font-weight: bold;
+}
+
+.page {
+  background-color: #FFF0F5;
+}
+
+.btn {
+  background-color: #FFB6C1;
+  color: #4B0082;
+  font-weight: bold;
+  border-radius: 20;
+  padding: 10 20;
+  margin: 5 0;
+}
+
+.input {
+  border-color: #FFB6C1;
+  border-width: 1;
+  border-radius: 10;
+  padding: 10;
+  margin: 5 0;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 10;
+  padding: 15;
+  margin: 10 0;
+}
+
+.title {
+  font-size: 24;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10;
+  color: #FF69B4;
+}
+
+.subtitle {
+  font-size: 18;
+  text-align: center;
+  margin-bottom: 20;
+  color: #8A2BE2;
+}
+
+.menu-grid {
+  margin-top: 20;
+}
+
+.menu-item {
+  margin: 5;
+  background-color: #FFB6C1;
+  color: #4B0082;
+  font-weight: bold;
+  border-radius: 10;
+}
+
+.mood-grid {
+  margin: 20 0;
+}
+
+.mood-icon {
+  font-size: 40;
+  text-align: center;
+}
+
+.mood-text {
+  font-size: 18;
+  text-align: center;
+  margin: 10 0;
+  color: #4B0082;
+}

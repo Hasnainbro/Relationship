@@ -1,0 +1,42 @@
+.home-page {
+  padding: 20;
+}
+
+.partner-updates {
+  margin-bottom: 20;
+}
+
+.avatar {
+  font-size: 40;
+  text-align: center;
+}
+
+.partner-name {
+  font-weight: bold;
+  text-align: center;
+}
+
+.partner-mood {
+  text-align: center;
+}
+
+.list {
+  height: 120;
+  margin-bottom: 10;
+}
+
+.list-item {
+  padding: 10;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+.countdown-text {
+  font-size: 18;
+  text-align: center;
+  margin: 10 0;
+  color: #8A2BE2;
+}
